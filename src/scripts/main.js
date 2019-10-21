@@ -1,14 +1,14 @@
 populateHTML()
 
-document.querySelector("#getParkResult").addEventListeners("click", () => {
+document.querySelector("#getParkResult").addEventListener("click", () => {
     getParkResult(document.querySelector("#parkSearch").value)
 })
-document.querySelector("#getRestaurantResult").addEventListeners("click", () => {
+document.querySelector("#getRestaurantResult").addEventListener("click", () => {
     getRestaurantResult(document.querySelector("#restaurantSearch").value)
 })
-document.querySelector("#getMeetupResult").addEventListeners("click", () => {
+document.querySelector("#getMeetupResult").addEventListener("click", () => {
     getMeetupResult(document.querySelector("#meetupSearch").value)    
 })
-document.querySelector("#getConcertResult").addEventListeners("click", () => {
+document.querySelector("#getConcertResult").addEventListener("click", () => {
     getConcertResult(document.querySelector("#concertSearch").value)
 })
