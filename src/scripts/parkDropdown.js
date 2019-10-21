@@ -4,9 +4,10 @@ const parkFeatures = ["community_center", "nature_center", "playground", "ada_ac
 // const parkSearchEl = document.querySelector("#parkSearch")
 
 const newFeatureOption = (feature) => {
+    const re = /_/g
     const newOption = document.createElement("option")
     newOption.className = "parkFeature"
-    newOption.innerHTML = feature.replace('_',' ')
+    newOption.innerHTML = feature.replace(re,' ')
     newOption.id = `feature-${feature}`
     document.querySelector("#parkSearch").appendChild(newOption)
 }

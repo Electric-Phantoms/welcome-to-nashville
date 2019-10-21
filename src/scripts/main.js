@@ -5,7 +5,8 @@ for (feature of parkFeatures) {
 }
 
 document.querySelector("#getParkResult").addEventListener("click", () => {
-    getParkResult(document.querySelector("#parkSearch").value.replace(" ", "_"))
+    const re = / /g
+    getParkResult(document.querySelector("#parkSearch").value.replace(re, "_"))
 })
 document.querySelector("#getRestaurantResult").addEventListener("click", () => {
     getRestaurantResult(document.querySelector("#restaurantSearch").value)
