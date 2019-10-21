@@ -3,8 +3,9 @@ console.log("This is how you do it")
 // API info
 // https://dev.socrata.com/foundry/data.nashville.gov/74d7-b74t
 
-// establish park features that will be included in a drop down menu
-const parkFeatures = ["community_center", "nature_center", "playground", "ada_accessible", "restrooms_available", "picnic_shelters", "dog_park", "baseball_fields", "basketball_courts", "volleyball", "soccer_fields", "football_multi_purpose_fields", "tennis_courts", "disc_golf", "skate_park", "swimming_pool", "spray_park", "golf_course", "walk_jog_paths", "hiking_trails", "horse_trails", "mountain_bike_trails", "boat_launch", "camping_available_by_permit", "fishing_by_permit", "lake", "canoe_launch", "community_garden", "historic_features"]
+
+
+// console.log(parkSearchEl)
 
 const apiBaseUrl = "https://data.nashville.gov/resource/74d7-b74t.json"
 
@@ -28,6 +29,7 @@ const getParkResult = (parkSearchCriteria) => {
     })
 }
 
+console.log(parksTextList)
 
 // need to add drop down menu - will be done in a separate pull-down
 
