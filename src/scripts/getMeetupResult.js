@@ -10,13 +10,33 @@ const getMeetupResult = userInput => {
             console.log("object: ", results.events[0])
 
             // creates array of strings that are going to be populated to the DOM through another function
-            // these are our search results
+            // these are the search results
             const meetupInfo = []
             results.events.forEach(obj => {
                 meetupInfo.push(`${obj.name.text}, ${obj.venue.name}: ${obj.venue.address.address_1}`)
             })
             // i need a return here somewhere too
+            displayResults(meetupInfo)
         })
 }
 
-getMeetupResult()
+const resultListItemTemplate = (inputString, resNum) => {
+    return `
+    <div class="resultContainer">
+        <div id="resultNum${resNum}>${resNum}: ${inputString}</div>
+        <button id="saveButton${resNum}">Save</button>
+    </div>
+    `
+}
+
+const displayResults = (inputArray) => {
+    let i = 1
+    inputArray.forEach(result => {
+        document.querySelector("#searchResults").innerHTML += resultListItemTemplate(result, i)
+        i++
+    })
+}
+
+const saveButtonFunctionality = () => {
+
+}
