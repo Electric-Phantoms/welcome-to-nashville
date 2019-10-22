@@ -24,7 +24,7 @@ const getMeetupResult = userInput => {
 const resultListItemTemplate = (inputString, resNum) => {
     return `
     <div class="resultContainer">
-        <div id="resultNum${resNum}">${resNum}: ${inputString}</div>
+        <div id="resultNum${resNum}">${inputString}</div>
         <button id="saveButton${resNum}">Save</button>
     </div>
     `
@@ -43,11 +43,11 @@ const displayResults = (inputArray) => {
 const saveButtonFunctionality = (inputArray) => {
     for (let i = 0; i < inputArray.length; i++) {
         document.querySelector(`#saveButton${i + 1}`).addEventListener("click", () => {
-            
+            populateItinerary(i)
         })
     }
 }
 
-const populateItinerary = () => {
-    
+const populateItinerary = (i) => {
+    document.querySelector(`#${saveSearchID}`).innerHTML = document.querySelector(`#resultNum${i + 1}`).innerText
 }

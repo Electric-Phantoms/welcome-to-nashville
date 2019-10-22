@@ -1,4 +1,4 @@
-
+let saveSearchID = ""
 
 populateHTML()
 
@@ -9,17 +9,22 @@ for (feature of parkFeatures) {
 
 // getParkResult on parkSearch.js
 //each event listener has a specific function to go and do a fetch call from its specific API and post the results on the dom with a save button for the info from each specific thing
+
 document.querySelector("#getParkResult").addEventListener("click", () => {
+    saveSearchID = "savePark"
     const re = / /g
     getParkResult(document.querySelector("#parkSearch").value.replace(re, "_"))
 })
 document.querySelector("#getRestaurantResult").addEventListener("click", () => {
+    saveSearchID = "saveRestaurant"
     getRestaurantResult(document.querySelector("#restaurantSearch").value)
 })
 document.querySelector("#getMeetupResult").addEventListener("click", () => {
+    saveSearchID = "saveMeetup"
     getMeetupResult(document.querySelector("#meetupSearch").value)    
 })
 document.querySelector("#getConcertResult").addEventListener("click", () => {
+    saveSearchID = "saveConcert"
     getConcertResult(document.querySelector("#concertSearch").value)
 })
 
