@@ -3,7 +3,7 @@
 const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.com/discovery/v2/events?apikey=${concertKey}&keyword=${concertSearchTerm}&locale=*&city=Nashville&countryCode=US&stateCode=TN`)
     .then(concertResponse => concertResponse.json())
     .then(concertResponse => {
-        console.log(concertResponse)
+       /*  console.log(concertResponse) */
 
         let concertNames = ""
         let concertVenue = ""
@@ -15,7 +15,10 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
             concertsAll.push(`${concertNames} at ${concertVenue} on ${concertDate}`)  
         }
 
-        console.log(concertsAll)
+        displayResults(concertsAll)
+        saveButtonFunctionality(concertsAll)
+        
+        /* console.log(concertsAll) */
     })
 
 
