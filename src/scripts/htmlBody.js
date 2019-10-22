@@ -7,7 +7,7 @@ const populateHTML = () => {
         <h2>Search for stuff to do today</h2>
 
         <div class="textSearchButtonPair">
-            <input type="text" id="parkSearch">
+            <select name="parkFeatures" id="parkSearch"></select>
             <button class="button searchButton" id="getParkResult">Search</button>            
         </div>
 
