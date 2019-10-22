@@ -1,3 +1,5 @@
+
+
 populateHTML()
 
 document.querySelector("#getParkResult").addEventListener("click", () => {
