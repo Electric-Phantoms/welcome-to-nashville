@@ -1,6 +1,6 @@
-const getMeetupResult = () => {
+const getMeetupResult = userInput => {
     
-    // I still need to take the search user input and change my fetch function to handle that
+    // I still need to take the user input from search and change my fetch function to handle that
     
     fetchFromEventbrite()
         .then(results => {
@@ -10,6 +10,7 @@ const getMeetupResult = () => {
             console.log("object: ", results.events[0])
 
             // creates array of strings that are going to be populated to the DOM through another function
+            // these are our search results
             const meetupInfo = []
             results.events.forEach(obj => {
                 meetupInfo.push(`${obj.name.text}, ${obj.venue.name}: ${obj.venue.address.address_1}`)
