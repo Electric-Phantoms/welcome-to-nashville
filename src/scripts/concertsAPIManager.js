@@ -9,8 +9,8 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
         let concertNames = []
         let concertVenue = []
         for (let i = 0; i < 10; i++) {
-            concertNames = `${concertResponse._embedded.events[i].name}`
-            concertVenue = `${concertResponse._embedded.events[i]["_embedded"]["venues"][0]["name"]}`
+            concertNames = concertResponse._embedded.events[i].name}
+            concertVenue = concertResponse._embedded.events[i]["_embedded"]["venues"][0]["name"]
             
         }
         console.log(concertNames)
