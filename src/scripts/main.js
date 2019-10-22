@@ -1,5 +1,5 @@
 populateHTML()
-
+//each event listener has a specific function to go and do a fetch call from its specific API and post the results on the dom with a save button for the info from each specific thing
 document.querySelector("#getParkResult").addEventListener("click", () => {
     getParkResult(document.querySelector("#parkSearch").value)
 })
