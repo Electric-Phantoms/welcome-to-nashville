@@ -1,9 +1,11 @@
 populateHTML()
 
+// puts the features on the dropdown menu of the DOM - reference parkDropdown.js
 for (feature of parkFeatures) {
     newFeatureOption(feature)
 }
 
+// getParkResult on parkSearch.js
 document.querySelector("#getParkResult").addEventListener("click", () => {
     const re = / /g
     getParkResult(document.querySelector("#parkSearch").value.replace(re, "_"))
@@ -17,3 +19,4 @@ document.querySelector("#getMeetupResult").addEventListener("click", () => {
 document.querySelector("#getConcertResult").addEventListener("click", () => {
     getConcertResult(document.querySelector("#concertSearch").value)
 })
+

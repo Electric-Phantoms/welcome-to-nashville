@@ -9,7 +9,7 @@ console.log("This is how you do it")
 
 const apiBaseUrl = "https://data.nashville.gov/resource/74d7-b74t.json"
 
-const parksTextList = []
+let parksTextList = []
 
 // getParkResult accesses the API and returns those items with features sought
 const getParkResult = (parkSearchCriteria) => {
@@ -20,16 +20,18 @@ const getParkResult = (parkSearchCriteria) => {
     .then(myParsedParks => {
         for(park of myParsedParks) {
             const newParkText = () => { 
-
+                // regex to reach buried address string 
+                const re = `address\\": \\"(.*)\\", \\"city`
+                // return formatted html text
                 return `
-            <h3 class="list-park">${park["park_name"]}</h3>
-            `}
-            parksTextList.push(newParkText())
+                <h3 class="list-park">${park["park_name"]} ${park["mapped_location"]["human_address"].match(re)[1]}</h3>
+                `}
+                parksTextList.push(newParkText())
         }
+    // only a test - should be removed 
+    console.log(parksTextList)
     })
+    // set parksTextList to empty so it doesn't accumulate
+    parksTextList = []
 }
-
-console.log(parksTextList)
-
-// need to add drop down menu - will be done in a separate pull-down
 
