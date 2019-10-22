@@ -1,5 +1,3 @@
-console.log("This is how you do it")
-
 // API info
 // https://dev.socrata.com/foundry/data.nashville.gov/74d7-b74t
 
@@ -23,15 +21,15 @@ const getParkResult = (parkSearchCriteria) => {
                 // regex to reach buried address string 
                 const re = `address\\": \\"(.*)\\", \\"city`
                 // return formatted html text
-                return `
-                <h3 class="list-park">${park["park_name"]} ${park["mapped_location"]["human_address"].match(re)[1]}</h3>
-                `}
-                parksTextList.push(newParkText())
+                return `${park["park_name"]} at ${park["mapped_location"]["human_address"].match(re)[1]}`}
+            parksTextList.push(newParkText())
         }
     // only a test - should be removed 
+    parksTextList.length = 10;
     console.log(parksTextList)
+
     })
-    // set parksTextList to empty so it doesn't accumulate
+    // set array list to empty so there's no accumulation from previous search
     parksTextList = []
 }
 
