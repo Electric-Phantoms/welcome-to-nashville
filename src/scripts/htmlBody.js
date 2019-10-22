@@ -7,21 +7,25 @@ const populateHTML = () => {
         <h2>Search for stuff to do today</h2>
 
         <div class="textSearchButtonPair">
+            <label for="parkSearch">Search for Parks<label>
             <select name="parkFeatures" id="parkSearch"></select>
             <button class="button searchButton" id="getParkResult">Search</button>            
         </div>
 
         <div class="textSearchButtonPair">
+            <label for="restaurantSearch">Search for Restaurants<label>
             <input type="text" id="restaurantSearch">
             <button class="button searchButton" id="getRestaurantResult">Search</button>            
         </div>
 
         <div class="textSearchButtonPair">
+            <label for="meetupSearch">Search for Meetups<label>
             <input type="text" id="meetupSearch">
             <button class="button searchButton" id="getMeetupResult">Search</button>            
         </div>
 
         <div class="textSearchButtonPair">
+            <label for="concertSearch">Search for Concerts<label>
             <input type="text" id="concertSearch">
             <button class="button searchButton" id="getConcertResult">Search</button>            
         </div>
@@ -31,7 +35,7 @@ const populateHTML = () => {
         <h2>Results</h2>
 
         <div id="listContainer">
-            <ol id="searchResults"></ol>
+            
         </div>
     </div>
 
