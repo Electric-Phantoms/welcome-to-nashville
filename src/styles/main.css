@@ -1,0 +1,36 @@
+#searchLabelPark {
+    margin-right: 60px;
+}
+
+#searchLabelRestaurant {
+    margin-right: 20.91px;
+}
+
+#searchLabelMeetup {
+    margin-right: 40.45px;
+}
+
+#searchLabelConcert {
+    margin-right: 38.69px;
+}
+
+#parkSearch {
+    margin-right: 10px;
+}
+
+#restaurantSearch {
+    margin-right: 38.4px;
+}
+
+#meetupSearch {
+    margin-right: 38.4px;
+}
+
+#concertSearch {
+    margin-right: 38.4px;
+}
+
+.textSearchButtonPair {
+    min-width: 455.2px;
+    margin: 5px 0 5px 0;
+}
