@@ -16,18 +16,19 @@
 
 #parkSearch {
     margin-right: 10px;
+    border-width: 1px;
 }
 
 #restaurantSearch {
-    margin-right: 38.4px;
+    margin-right: 38.08px;
 }
 
 #meetupSearch {
-    margin-right: 38.4px;
+    margin-right: 38.08px;
 }
 
 #concertSearch {
-    margin-right: 38.4px;
+    margin-right: 38.08px;
 }
 
 .textSearchButtonPair {
