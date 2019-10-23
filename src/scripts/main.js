@@ -1,3 +1,5 @@
+SelectFileCSS()
+
 // this variable lets our app know which type of search is being processed
 let saveSearchID = ""
 
