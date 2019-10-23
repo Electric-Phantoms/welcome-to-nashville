@@ -43,3 +43,19 @@
     margin-bottom: 10px;
 
 }
+
+button:hover{
+    background-color: aquamarine;
+}
+
+#searchContainer, h1, #resultsContainer, #itineraryContainer {
+    border-bottom: gray 0.5px solid;
+}
+
+button{
+    height: 22px
+}
+
+.saveResult{
+    margin: 5px 0 5px 0;
+}
