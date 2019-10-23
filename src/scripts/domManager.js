@@ -30,7 +30,13 @@ const saveButtonFunctionality = (inputArray) => {
     }
 }
 
+// // populates our selected result to the DOM
+// const populateItinerary = (i) => {
+//     document.querySelector(`#${saveSearchID}`).innerHTML = document.querySelector(`#resultNum${i + 1}`).innerText
+// }
+
 // populates our selected result to the DOM
 const populateItinerary = (i) => {
-    document.querySelector(`#${saveSearchID}`).innerHTML = document.querySelector(`#resultNum${i + 1}`).innerText
+    const classSplit = document.querySelector(`#${saveSearchID}`).classList[1]
+    document.querySelector(`#${saveSearchID}`).innerHTML = `${classSplit}: ${document.querySelector(`#resultNum${i + 1}`).innerText}`
 }
