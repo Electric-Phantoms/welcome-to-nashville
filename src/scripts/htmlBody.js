@@ -1,3 +1,4 @@
+// initial html structure to be inserted on the DOM
 const populateHTML = () => {
     const bodyReference = document.querySelector("body")
     bodyReference.innerHTML = `
