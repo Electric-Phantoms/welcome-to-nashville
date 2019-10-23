@@ -5,6 +5,7 @@ const parkFeatures = ["community_center", "nature_center", "playground", "ada_ac
 const newFeatureOption = (feature) => {
     const re = /_/g
     const newOption = document.createElement("option")
+    newOption.value = feature
     newOption.className = "parkFeature"
     newOption.innerHTML = feature.replace(re,' ')
     newOption.id = `feature-${feature}`
