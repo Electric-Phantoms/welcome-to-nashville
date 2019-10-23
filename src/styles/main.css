@@ -34,3 +34,12 @@
     min-width: 455.2px;
     margin: 5px 0 5px 0;
 }
+
+.resultContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 10px;
+
+}
