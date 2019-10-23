@@ -10,9 +10,8 @@ const clearResults = () => {
 populateHTML()
 
 // puts the features on the dropdown menu of the DOM - reference parkDropdown.js
-for (feature of parkFeatures) {
-    newFeatureOption(feature)
-}
+populateParkDropdown(parkFeatures)
+
 
 // getParkResult on parkSearch.js
 
@@ -22,7 +21,7 @@ document.querySelector("#getParkResult").addEventListener("click", () => {
     clearResults()
     saveSearchID = "savePark"
     const re = / /g
-    getParkResult(document.querySelector("#parkSearch").value.replace(re, "_"))
+    getParkResult(document.querySelector("#parkSearch").value)
 })
 document.querySelector("#getRestaurantResult").addEventListener("click", () => {
     clearResults()
