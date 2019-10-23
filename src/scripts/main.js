@@ -44,3 +44,4 @@ document.querySelector("#getConcertResult").addEventListener("click", () => {
     document.querySelector("#concertSearch").value = ""
 })
 
+refreshItinerary();

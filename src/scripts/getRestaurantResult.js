@@ -15,7 +15,7 @@ const getRestaurantResult = (searchInput) => {
            dataArray.push(`${nameString}: ${addressString}`);
         }}
         displayResults(dataArray)
-        saveButtonFunctionality(dataArray)
+        saveButtonFunctionality("restaurant", dataArray)
         
         // putDataOnDom();
     })

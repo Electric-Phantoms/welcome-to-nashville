@@ -1,10 +1,9 @@
 {
-    "itinerary":
-        {
-          "id": 1,
-          "park": "",
-          "restaurant": "",
-          "meetup": "",
-          "concert": ""
-        }
+  "itinerary": {
+    "id": 1,
+    "park": "",
+    "restaurant": "Fat Mo's Burgers: 2620 Franklin Pike, Nashville 37204",
+    "meetup": "",
+    "concert": ""
   }
+}

@@ -49,12 +49,7 @@ const populateHTML = () => {
     </div>
 
     <div id="itineraryContainer">
-        <h2>My itinerary</h2>
-
-        <div class="saveResult Park" id="savePark">Park: </div>
-        <div class="saveResult Restaurant" id="saveRestaurant">Restaurant: </div>
-        <div class="saveResult Meetup" id="saveMeetup">Meetup: </div>
-        <div class="saveResult Concert" id="saveConcert">Concert: </div>
+        
     </div>
     `
 }
