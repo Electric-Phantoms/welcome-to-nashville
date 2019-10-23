@@ -6,21 +6,4 @@
     margin-bottom: 10px;
 
 }
-
-
-
-.textSearchButtonPair {
-    display : flex;
-margin-bottom:10px;
-justify-content: space-between;
-}
-
-#searchContainer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-input {
-    
-}
+ 
