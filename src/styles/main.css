@@ -1,0 +1,26 @@
+.resultContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.textSearchButtonPair {
+    display : flex;
+margin-bottom:10px;
+justify-content: space-between;
+}
+
+#searchContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input {
+    
+}
