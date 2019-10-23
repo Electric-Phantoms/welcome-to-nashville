@@ -2,7 +2,9 @@
 const populateHTML = () => {
     const bodyReference = document.querySelector("body")
     bodyReference.innerHTML = `
-    <h1>Welcome to Nashville</h1>
+    <div id="h1Banner">
+        <h1>Welcome to Nashville</h1>
+    </div>
 
     <div id="searchContainer">
         <h2>Search for stuff to do today</h2>
