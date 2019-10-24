@@ -55,10 +55,18 @@ const populateHTML = () => {
     <div id="itineraryContainer">
         <h2>My itinerary</h2>
 
-        <div class="saveResult Park" id="savePark">Park: </div>
-        <div class="saveResult Restaurant" id="saveRestaurant">Restaurant: </div>
-        <div class="saveResult Meetup" id="saveMeetup">Meetup: </div>
-        <div class="saveResult Concert" id="saveConcert">Concert: </div>
+        <div class="saveResult Park" id="savePark">Park: 
+            <input type="hidden" id="recipeId" value="" /> 
+        </div>
+        <div class="saveResult Restaurant" id="saveRestaurant">Restaurant: 
+            <input type="hidden" id="recipeId" value="" />
+        </div>
+        <div class="saveResult Meetup" id="saveMeetup">Meetup: 
+            <input type="hidden" id="recipeId" value="" />
+        </div>
+        <div class="saveResult Concert" id="saveConcert">Concert: 
+            <input type="hidden" id="recipeId" value="" />
+        </div>
     </div>
     `
 }

@@ -11,6 +11,8 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
         let concertVenue = ""
         let concertsAll = []
 
+
+
 // Looping through the response from the API to locate the name, venue, and date of the event, and then building an array of strings containing the information. 
     
         for (let i = 0; i < 10; i++) {
@@ -26,6 +28,6 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
         saveButtonFunctionality(concertsAll)
         
         /* console.log(concertsAll) */
+    
+
     })
-
-
