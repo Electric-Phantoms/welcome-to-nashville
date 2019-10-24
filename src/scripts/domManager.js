@@ -25,7 +25,7 @@ const saveButtonFunctionality = (typeOfInput, inputArray) => {
     for (let i = 0; i < inputArray.length; i++) {
         document.querySelector(`#saveButton${i + 1}`).addEventListener("click", () => {
             saveResult(typeOfInput, (i + 1));
-            
+
         })
     }
 }
@@ -42,7 +42,7 @@ const saveButtonFunctionality = (typeOfInput, inputArray) => {
 // }
 
 const saveResult = (type, idFromDom) => {
-    let updatedObject= {};
+    let updatedObject = {};
     let check = type;
     if (check === 1) {
         updatedObject = {
@@ -65,7 +65,7 @@ const saveResult = (type, idFromDom) => {
         }
 
     }
-    
+
     // Logic for the PUT operation
     fetch(`http://localhost:8088/itinerary`, {
         method: "PATCH",

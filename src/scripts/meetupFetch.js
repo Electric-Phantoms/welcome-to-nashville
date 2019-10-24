@@ -8,6 +8,6 @@ const realFetchFromEventbrite = userInput => {
         "headers": {
             "Accept": "application/json"
         }
-        .then(r => r.json())
+            .then(r => r.json())
     });
 }

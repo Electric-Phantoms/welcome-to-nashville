@@ -1,11 +1,11 @@
 // secondary fetch code which stores our functionality
 const getMeetupResult = userInput => {
-    
+
     fetchFromEventbrite()
         .then(results => {
-            
+
             // these are just console logs to help me keep track of what data I'm grabbing from Eventbrite
-            
+
             // console.log("event name: ", results.events[0].name.text)
             // console.log("venue name: ", results.events[0].venue.name)
             // console.log("address: ", results.events[0].venue.address.address_1)
