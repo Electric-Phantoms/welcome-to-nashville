@@ -72,3 +72,5 @@ document.querySelector("#concertSearch").addEventListener("keypress", (e) => {
         document.querySelector("#concertSearch").value = ""
     }
 })
+
+refreshItinerary();

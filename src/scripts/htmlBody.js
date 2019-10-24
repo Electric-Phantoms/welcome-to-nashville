@@ -51,14 +51,9 @@ const populateHTML = () => {
             </div>
         </div>
 
-        <div id="itineraryContainer">
-            <h2>My itinerary</h2>
 
-            <div class="saveResult Park" id="parkSave">Park: </div>
-            <div class="saveResult Restaurant" id="restaurantSave">Restaurant: </div>
-            <div class="saveResult Meetup" id="meetupSave">Meetup: </div>
-            <div class="saveResult Concert" id="concertSave">Concert: </div>
-        </div>
+    <div id="itineraryContainer">
+        
     </div>
     `
 }
