@@ -47,10 +47,6 @@ in the next four ids */
 
 }
 
-button:hover{
-    background-color: aquamarine;
-}
-
 #searchContainer, #h1Banner, #resultsContainer, #itineraryContainer {
     border-bottom: gray 0.5px solid;
 }
