@@ -17,20 +17,20 @@
 /* the only difference between this and main.css is the margin-right size
 in the next four ids */
 #parkSearch {
-    margin-right: 10px;
+    margin-right: 20px;
     border-width: 1px;
 }
 
 #restaurantSearch {
-    margin-right: 57px;
+    margin-right: 67px;
 }
 
 #meetupSearch {
-    margin-right: 57px;
+    margin-right: 67px;
 }
 
 #concertSearch {
-    margin-right: 57px;
+    margin-right: 67px;
 }
 
 .textSearchButtonPair {
