@@ -5,7 +5,7 @@ code */
 const resultListItemTemplate = (inputString, resNum) => {
     return `
     <div class="resultContainer">
-        <div id="resultNum${resNum}">${inputString}</div>
+        <div class="divSetLength" id="resultNum${resNum}">${inputString}</div>
         <button id="saveButton${resNum}">Save</button>
     </div>
     `
