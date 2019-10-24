@@ -18,6 +18,6 @@ const getMeetupResult = userInput => {
                 meetupInfo.push(`${obj.name.text}, ${obj.venue.name}: ${obj.venue.address.address_1}`)
             })
             displayResults(meetupInfo)
-            saveButtonFunctionality(meetupInfo)
+            saveButtonFunctionality(3, meetupInfo)
         })
 }

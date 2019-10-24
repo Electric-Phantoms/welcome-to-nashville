@@ -1,9 +1,9 @@
 {
   "itinerary": {
     "id": 1,
-    "park": "",
-    "restaurant": "Fat Mo's Burgers: 2620 Franklin Pike, Nashville 37204",
-    "meetup": "",
-    "concert": ""
+    "park": "Madison Park at 510 Cumberland Ave",
+    "restaurant": "Pei Wei Asian Diner: 4015 Hillsboro Pike, Nashville 37215",
+    "meetup": "Some text, Great Venue: null",
+    "concert": "Amy Grant & Vince Gill - Christmas at the Ryman at Ryman Auditorium on 2019-12-23"
   }
 }

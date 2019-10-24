@@ -23,7 +23,7 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
  // Calling the functions to display results and add functionality to the save buttons.
 
         displayResults(concertsAll)
-        saveButtonFunctionality(concertsAll)
+        saveButtonFunctionality(4, concertsAll)
         
         /* console.log(concertsAll) */
     })

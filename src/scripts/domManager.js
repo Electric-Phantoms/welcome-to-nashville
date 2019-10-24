@@ -25,7 +25,7 @@ const saveButtonFunctionality = (typeOfInput, inputArray) => {
     for (let i = 0; i < inputArray.length; i++) {
         document.querySelector(`#saveButton${i + 1}`).addEventListener("click", () => {
             saveResult(typeOfInput, (i + 1));
-            refreshItinerary();
+            
         })
     }
 }
@@ -49,23 +49,23 @@ const saveResult = (type, idFromDom) => {
             restaurant: document.querySelector(`#resultNum${idFromDom}`).innerText
         };
 
-    } else if (check === "park") {
+    } else if (check === 2) {
         updatedObject = {
             park: document.querySelector(`#resultNum${idFromDom}`).innerText
         }
 
-    } else if (check === "meetup") {
+    } else if (check === 3) {
         updatedObject = {
             meetup: document.querySelector(`#resultNum${idFromDom}`).innerText
         }
 
-    } else if (check === "concert") {
+    } else if (check === 4) {
         updatedObject = {
             concert: document.querySelector(`#resultNum${idFromDom}`).innerText
         }
 
     }
-    console.log(updatedObject)
+    
     // Logic for the PUT operation
     fetch(`http://localhost:8088/itinerary`, {
         method: "PATCH",
@@ -76,7 +76,7 @@ const saveResult = (type, idFromDom) => {
     })
         .then(res => {
             res.json();
-            console.log("this is running")
+            refreshItinerary();
         })
 
 

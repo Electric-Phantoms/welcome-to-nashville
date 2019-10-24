@@ -23,7 +23,7 @@ const getParkResult = parkSearchCriteria => {
 
         }
         displayResults(parksTextList)
-        saveButtonFunctionality(parksTextList)
+        saveButtonFunctionality(2, parksTextList)
 
     })
 
