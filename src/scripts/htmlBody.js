@@ -6,6 +6,8 @@ const populateHTML = () => {
         <h1>Welcome to Nashville</h1>
     </div>
 
+    <div></div>
+
     <div id="searchContainer">
         <h2>Search for stuff to do today</h2>
 
