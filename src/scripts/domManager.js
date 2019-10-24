@@ -41,6 +41,8 @@ const saveButtonFunctionality = (typeOfInput, inputArray) => {
 //     document.querySelector(`#${saveSearchID}`).innerHTML = `${classSplit}: ${document.querySelector(`#resultNum${i + 1}`).innerText}`
 // }
 
+
+//this function takes the text from the result div in which you clicked the save button and uses a patch request to place that info in the correct key in the json file
 const saveResult = (type, idFromDom) => {
     let updatedObject = {};
     let check = type;
@@ -81,7 +83,7 @@ const saveResult = (type, idFromDom) => {
 
 
 }
-
+//this function clears out a particular key in the itinerary object of the json file
 const clearItineraryArea = (num) => {
     let typeNum = num;
     let newObject = {};
@@ -117,7 +119,7 @@ const clearItineraryArea = (num) => {
         })
 }
 
-
+//this function fetches the data from our json file and uses it to populate the itinerary part of the dom
 const refreshItinerary = () => {
     fetch(`http://localhost:8088/itinerary`)
         .then(jsonData => jsonData.json())
