@@ -47,15 +47,6 @@ const jsonParkEntry = (re) => {
         body: JSON.stringify(updatedObject)
     })
     .then(res => res.json())
-    // .then(() => {
-    //     /*
-    //         Since this is the point in the code where you KNOW
-    //         the operation completed successfully, clear the
-    //         value of the hidden input field to that your
-    //         application is back to the state of creating instead
-    //         of editing
-    //     */
-    //     // document.querySelector("#recipeId").value = ""
-    // })
+
     return updatedObject
  }
