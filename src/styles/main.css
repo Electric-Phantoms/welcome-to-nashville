@@ -61,7 +61,7 @@ button:hover{
     margin-right: auto;
     margin-left: auto;
     background-size: 580px 100px;
-    background-image: url("https://files.slack.com/files-pri/T03F2SDTJ-FPQGKPFFS/nashville_image.jpg");
+    background-image: url("../images/nashvilleImage.jpg");
     width: 580px;
     height: 100px;
 }
