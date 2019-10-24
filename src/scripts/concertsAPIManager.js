@@ -10,7 +10,7 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
         let concertNames = ""
         let concertVenue = ""
         let concertsAll = []
-        let noResults = "No Results"
+        
 
 
 // Looping through the response from the API to locate the name, venue, and date of the event, and then building an array of strings containing the information. 
@@ -26,6 +26,7 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
             }
             else {
                 console.log("no results")
+                
 
         }
 
