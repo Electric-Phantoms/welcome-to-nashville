@@ -51,6 +51,7 @@ const populateHTML = () => {
             </div>
         </div>
 
+
     <div id="itineraryContainer">
         
     </div>
