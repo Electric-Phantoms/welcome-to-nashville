@@ -24,13 +24,8 @@ const displayResults = (inputArray) => {
 const saveButtonFunctionality = (typeOfInput, inputArray) => {
     for (let i = 0; i < inputArray.length; i++) {
         document.querySelector(`#saveButton${i + 1}`).addEventListener("click", () => {
-
-           
-          populateItinerary(i)
               
-
           saveResult(typeOfInput, (i + 1));
-
         })
     }
 }
