@@ -10,22 +10,37 @@ const getConcertResult = concertSearchTerm => fetch(`https://app.ticketmaster.co
         let concertNames = ""
         let concertVenue = ""
         let concertsAll = []
+        
+
 
         // Looping through the response from the API to locate the name, venue, and date of the event, and then building an array of strings containing the information. 
 
         for (let i = 0; i < 10; i++) {
+            if (typeof concertResponse._embedded != "undefined") {
             concertNames = `${concertResponse._embedded.events[i].name}`
             concertVenue = `${concertResponse._embedded.events[i]["_embedded"]["venues"][0]["name"]}`
             concertDate = `${concertResponse._embedded.events[i].dates.start.localDate}`
-            concertsAll.push(`${concertNames} at ${concertVenue} on ${concertDate}`)
+
+            concertsAll.push(`${concertNames} at ${concertVenue} on ${concertDate}`)  
+            /* console.log(concertResponse._embedded) */
+            
+            }
+            else {
+                console.log("no results")
+                
+
         }
 
-        // Calling the functions to display results and add functionality to the save buttons.
+    }
+
+ // Calling the functions to display results and add functionality to the save buttons.
+      
+
 
         displayResults(concertsAll)
         saveButtonFunctionality(4, concertsAll)
 
         /* console.log(concertsAll) */
+    
+
     })
-
-
