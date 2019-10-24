@@ -21,26 +21,56 @@ populateParkDropdown(parkFeatures)
 // specific API and post the results on the dom with a save button for the info from each specific thing
 document.querySelector("#getParkResult").addEventListener("click", () => {
     clearResults()
-    saveSearchID = "savePark"
+    saveSearchID = "parkSave"
     const re = / /g
     getParkResult(document.querySelector("#parkSearch").value)
 })
 document.querySelector("#getRestaurantResult").addEventListener("click", () => {
     clearResults()
-    saveSearchID = "saveRestaurant"
+    saveSearchID = "restaurantSave"
     getRestaurantResult(document.querySelector("#restaurantSearch").value)
     document.querySelector("#restaurantSearch").value = ""
 })
 document.querySelector("#getMeetupResult").addEventListener("click", () => {
     clearResults()
-    saveSearchID = "saveMeetup"
+    saveSearchID = "meetupSave"
     getMeetupResult(document.querySelector("#meetupSearch").value)
     document.querySelector("#meetupSearch").value = ""
 })
 document.querySelector("#getConcertResult").addEventListener("click", () => {
     clearResults()
-    saveSearchID = "saveConcert"
+    saveSearchID = "concertSave"
     getConcertResult(document.querySelector("#concertSearch").value)
     document.querySelector("#concertSearch").value = ""
 })
 
+// these event listeners add functionality to allow the enter key start the search from the input box
+document.querySelector("#restaurantSearch").addEventListener("keypress", (e) => {
+    const key = e.which || e.keyCode;
+    if (key === 13) {
+        clearResults()
+        saveSearchID = "restaurantSave"
+        getRestaurantResult(document.querySelector("#restaurantSearch").value)
+        document.querySelector("#restaurantSearch").value = ""
+    }
+})
+document.querySelector("#meetupSearch").addEventListener("keypress", (e) => {
+    const key = e.which || e.keyCode;
+    if (key === 13) {
+        clearResults()
+        saveSearchID = "meetupSave"
+        getMeetupResult(document.querySelector("#meetupSearch").value)
+        document.querySelector("#meetupSearch").value = ""
+    }
+})
+document.querySelector("#concertSearch").addEventListener("keypress", (e) => {
+    const key = e.which || e.keyCode;
+    if (key === 13) {
+        clearResults()
+        saveSearchID = "concertSave"
+        getConcertResult(document.querySelector("#concertSearch").value)
+        document.querySelector("#concertSearch").value = ""
+    }
+})
+
+refreshItinerary();
