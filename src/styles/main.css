@@ -126,3 +126,7 @@ body {
 h2 {
     text-align: center;
 }
+
+#itineraryContainer {
+    padding: 10px;
+}

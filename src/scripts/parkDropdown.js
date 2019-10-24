@@ -7,7 +7,7 @@ const newFeatureOption = (feature) => {
     const newOption = document.createElement("option")
     newOption.value = feature
     newOption.className = "parkFeature"
-    newOption.innerHTML = feature.replace(re,' ')
+    newOption.innerHTML = feature.replace(re, ' ')
     newOption.id = `feature-${feature}`
     document.querySelector("#parkSearch").appendChild(newOption)
 }
@@ -15,7 +15,7 @@ const newFeatureOption = (feature) => {
 // function to populate dropdown menu called on main.js
 const populateParkDropdown = parkfeatures => {
     for (feature of parkFeatures) {
-    newFeatureOption(feature)
+        newFeatureOption(feature)
     }
 }
 
