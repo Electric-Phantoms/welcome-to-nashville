@@ -89,10 +89,26 @@ const refreshItinerary = () => {
 
             document.querySelector("#itineraryContainer").innerHTML =
                 `<h2>My itinerary</h2>
-
-        <div class="saveResult Park" id="savePark">Park: ${parsedData.park}</div>
-        <div class="saveResult Restaurant" id="saveRestaurant">Restaurant: ${parsedData.restaurant}</div>
-        <div class="saveResult Meetup" id="saveMeetup">Meetup: ${parsedData.meetup}</div>
-        <div class="saveResult Concert" id="saveConcert">Concert: ${parsedData.concert}</div>`
+        <div>
+            <div class="saveResult Park" id="savePark">Park: ${parsedData.park}</div>
+            <button id="clearButton1">Clear</button>
+        </div>
+        <div>
+            <div class="saveResult Restaurant" id="saveRestaurant">Restaurant: ${parsedData.restaurant}</div>
+            <button id="clearButton2">Clear</button>
+        </div>
+        <div>
+            <div class="saveResult Meetup" id="saveMeetup">Meetup: ${parsedData.meetup}</div>
+            <button id="clearButton3">Clear</button>
+        </div>
+        <div>
+            <div class="saveResult Concert" id="saveConcert">Concert: ${parsedData.concert}</div>
+            <button id="clearButton4">Clear</button>
+        </div>`;
+        for (i=1; i<5; i++) {
+            document.querySelector(`#clearButton${i}`).addEventListener("click", (i) ={
+                clearItineraryArea(i);
+            })
+        }
         })
 }
