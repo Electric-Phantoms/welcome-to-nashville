@@ -1,10 +1,9 @@
-{"itinerary": 
-    {
-        "id": "1",
-        "park": "",
-        "restaurant":"",
-        "meetup": "",
-        "concert":""
-}}
-
-
+{
+  "itinerary": {
+    "id": 1,
+    "park": "",
+    "restaurant": "",
+    "meetup": "",
+    "concert": "Kacey Musgraves: Oh, What a World: Tour II at Bridgestone Arena on 2019-10-25"
+  }
+}

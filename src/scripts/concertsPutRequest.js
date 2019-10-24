@@ -39,7 +39,7 @@ const jsonParkEntry = (re) => {
         concert: jsonConcertEntry(re)
     }
     // Logic for the PUT operation
-    fetch(http://localhost:8088/itinerary, {
+    fetch(`http://localhost:8088/itinerary`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
