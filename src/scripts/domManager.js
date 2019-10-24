@@ -82,6 +82,42 @@ const saveResult = (type, idFromDom) => {
 
 }
 
+const clearItineraryArea = (num) => {
+    let typeNum = num;
+    let newObject = {};
+    if (typeNum === 1) {
+        newObject = {
+            "park": ""
+        }
+    } else   if (num === 2) {
+        newObject = {
+            "restaurant": ""
+        }
+    } else   if (num === 3) {
+        newObject = {
+            "meetup": ""
+        }
+    } else   if (num === 4) {
+        newObject = {
+            "concert": ""
+        }
+
+    }
+    console.log(newObject)
+    fetch(`http://localhost:8088/itinerary`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newObject)
+    })
+        .then(res => {
+            res.json();
+            refreshItinerary();
+        })
+}
+
+
 const refreshItinerary = () => {
     fetch(`http://localhost:8088/itinerary`)
         .then(jsonData => jsonData.json())
@@ -105,10 +141,12 @@ const refreshItinerary = () => {
             <div class="saveResult Concert" id="saveConcert">Concert: ${parsedData.concert}</div>
             <button id="clearButton4">Clear</button>
         </div>`;
-        for (i=1; i<5; i++) {
-            document.querySelector(`#clearButton${i}`).addEventListener("click", (i) ={
-                clearItineraryArea(i);
+        for (let i=1; i<5; i++) {
+            document.querySelector(`#clearButton${i}`).addEventListener("click", () => {
+                
+                clearItineraryArea(i)
             })
         }
         })
 }
+
